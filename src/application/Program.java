@@ -27,14 +27,14 @@ public class Program {
 	    	while(emp.hasId(list, emp.getId())) {
 	    		System.out.println("Id already taken! Try again: ");
 	    		 emp.setId(sc.nextInt());
-	    		}
+	    	}
 	    	System.out.print("Name: ");
 	    	sc.nextLine();
 	    	emp.setName(sc.nextLine());
 	    	System.out.print("Salary: ");
 	    	emp.setSalary(sc.nextDouble());
 	    	list.add(emp);
-	    	}
+	    }
 	    System.out.println("------------------------------------------");
 	    System.out.print("Do you want to increase a salary? (S/N):  ");
 	    sc.nextLine();
