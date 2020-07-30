@@ -59,8 +59,6 @@ public class Program {
 	   		System.out.println(emplo);
 	    	System.out.println("-------------------------------------");
 		}
-	    
-	   	sc.close();
-	    
+	   	sc.close(); 
 	 }    
  }
