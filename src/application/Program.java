@@ -26,7 +26,7 @@ public class Program {
 	    	emp.setId(sc.nextInt());
 	    	while(emp.hasId(list, emp.getId())) {
 	    		System.out.println("Id already taken! Try again: ");
-	    		 emp.setId(sc.nextInt());
+	    		emp.setId(sc.nextInt());
 	    	}
 	    	System.out.print("Name: ");
 	    	sc.nextLine();
@@ -40,7 +40,7 @@ public class Program {
 	    sc.nextLine();
 	    String resp = sc.nextLine();
 	    if(resp.equalsIgnoreCase("S")) {
-	    	System.out.println("-------------------------------------------------------");
+	    	System.out.println("------------------------------------------------------");
 	   		System.out.println("Enter the employee Id that will have salary increase: ");
 	   		int idSalary = sc.nextInt();
 	   		Employees emp = list.stream().filter(x -> x.getId() == idSalary).findFirst().orElse(null);

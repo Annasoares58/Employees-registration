@@ -18,8 +18,7 @@ public class Employees {
 	}
 
 	  public boolean hasId(List<Employees> list, int id) {
-	    	Employees emp = list.stream().filter(x -> x.getId() == id).findFirst().orElse(null);
-	    		return emp !=  null;
+		  return list.stream().filter(x -> x.getId() == id).findFirst().isPresent();
 	  }
 	    		
 	public Integer getId() {
